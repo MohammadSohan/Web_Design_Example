@@ -1,0 +1,227 @@
+/*******************************
+	All Responsive Code
+*******************************/
+
+@media (max-width: 991px) {
+	.main-menu ul.navbar-nav {
+	    background:  #000;
+	    width:  100%;
+	    text-align: center;
+	    padding: 0px 0;
+	    opacity: .8;
+	}
+
+	.main-menu ul.navbar-nav li a{
+	    padding: 10px 0;
+	}
+
+	.header-content h1{
+		font-size: 45px;
+	}
+
+	.header-content h1 span{
+		font-size: 45px;
+	}
+
+	.header-content a{
+		font-size: 13px;
+	}
+
+	.header-content p{
+		font-size: 14px
+	}
+
+	.header-img{
+		width: 100%;
+	}
+
+	.about-left-details ul li a {
+    	margin: 2px;
+	}
+
+	.about-left-details h4 {
+		font-size: 18px;
+		margin-bottom: 6px;
+	}
+
+	.about-right{
+		font-size: 20px;
+	}
+
+	.about-right h3 {
+	    font-size: 22px;
+	}
+
+	.about-right p {
+	    font-size: 16px;
+	    line-height: 25px;
+	}
+
+	.about-right a {
+	    padding: 4px 8px;
+	    margin-top: 16px;
+	}
+
+	.video-icon a{
+		font-size: 20px;
+		width: 50px;
+  		height: 50px;
+		line-height: 50px;
+		margin-top: 20px;
+	}
+
+	.video-area{
+		width: 100%;
+	}
+
+	.skill-left h3{
+		font-size: 23px;
+		margin-bottom: 10px;
+	}
+
+	.skill-left p {
+	    font-size: 15px;
+	    line-height: 26px;
+	}
+
+	.protfolio-more {
+	    padding: 9px 13px 9px 13px;
+	    margin-top: 1px;
+	    font-size: 17px;
+	}
+
+	.item p {
+	    line-height: 27px;
+	    font-size: 17px;
+	}
+
+	.counter-box{
+		margin-bottom: 35px;
+	}
+
+	.counter-name{
+		font-size: 18px;
+	}
+
+	.counter-number{
+		font-size: 18px;
+	}
+
+	.counter-box i {
+	    font-size: 18px;
+	    height: 50px;
+	    width: 50px;
+	}
+
+	.protfolio-menu button{
+		font-size: 13px;
+	}
+
+	.owl-prev{
+		top: 25px;
+		left: 123px;
+	}
+
+	.owl-next{
+		top: 25px;
+		left: 390px;
+	}
+
+	.blog-item{
+		margin-bottom: 35px;
+	}
+
+	.blog-item img {
+    	width: 100%;
+	}
+
+	.contact button {
+	    font-size: 15px;
+	    padding: 7px 18px;
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	.header-content h1{
+		font-size: 39px;
+	}
+
+	.header-content h1 span{
+		font-size: 35px;
+	}
+
+	.about-right h3{
+		margin-top: 50px;
+	}
+
+	.video-area h1{
+		font-size: 25px;
+	}
+
+	.skill-right h3 {
+    margin-right: 50px;
+	}
+
+	.video-icon a{
+		font-size: 20px;
+		width: 50px;
+  		height: 50px;
+		line-height: 50px;
+		margin-top: 20px;
+	}
+
+	.video-area{
+		width: 100%;
+	}
+
+	.protfolio-item img{
+		width: 100%;
+	}
+
+	.owl-prev{
+		top: 25px;
+		left: 0px;
+	}
+
+	.owl-next{
+		top: 25px;
+		left: 330px;
+	}
+
+
+}
+
+@media (max-width: 576px) {
+
+	.header-content p {
+    max-width: 850px;
+    margin: 21px auto 5px auto;
+    line-height: 21px;
+	}
+
+	.owl-prev{
+		top: 25px;
+		left: 0px;
+	}
+
+	.owl-next{
+		top: 25px;
+		left: auto;
+		margin-left: 50px;
+	}
+
+	.footer-icon{
+		text-align: center;
+	}
+
+	.footer-icon ul li {
+	    display: inline;
+	}
+
+	.footer .text-right{
+		text-align: center !important;
+		margin-top: 20px;
+	}
+}

@@ -1,0 +1,1147 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    WebCodersBD
+Version:    1.0
+Last change:    24/03/17 [fixed Float bug, vf]
+Author Name: Sohan
+Primary use:    Responsive Website Design
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2.
+-------------------------------------------------------------------*/
+
+/*
+==========================================
+    Google Fonts
+==========================================
+*/
+
+/* font-family: 'Kalam', cursive; */
+
+@import url('https://fonts.googleapis.com/css?family=Kalam:300,400,700');
+
+
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+
+
+html ,
+body {
+	height: 100%;
+	font-family: 'Kalam', cursive;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.section-padding{
+	padding: 54px 0;
+}
+
+.section-header h2{
+	font-size: 30px;
+	font-weight: 600;
+}
+
+
+.section-header h2::after{
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 156px;
+  top: 100%;
+  left: 50%;
+  margin-top: 8px;
+  margin-left: -78px;
+  background: deepskyblue;
+}
+
+.section-header h2::before{
+  content: '';
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  top: 100%;
+  left: 50%;
+  border-radius: 50px;
+  margin-left: -8px;
+  background: deepskyblue;
+}
+
+.section-header h2 span{
+	color: deepskyblue;
+}
+
+.content-top-space{
+  margin-top: 60px;
+}
+
+.menu li.active > a {
+    color: #E74C3C;
+    font-weight: 600;
+}
+
+
+/*
+==========================================
+    nav-bar Css
+==========================================
+*/
+
+.header-main {
+    position: fixed;
+    z-index:  99;
+    width: 100%;
+}
+
+.header-main:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: #393838;
+    left: 0;
+    top: 0;
+    opacity: .49;
+    z-index: -1;
+}
+
+nav.main-menu ul li {
+    float:  left;
+    margin-left: 17px;
+}
+
+nav.main-menu ul li a {
+    color: #fff;
+    text-transform:  uppercase;
+    padding: 15px 10px;
+    text-decoration:  none;
+    font-family: 'Kalam', cursive;
+    font-size: 16px;
+    display:  inline-block;
+    font-weight: 500;
+    transition: .8s;
+}
+
+nav.main-menu ul li a:hover{
+	color: skyblue;
+}
+
+nav.main-menu ul {
+    float:  right;
+    padding:  10px 0;
+}
+
+
+i.fa.fa-bars {
+    color:  #ffff;
+}
+
+.logo {
+    margin-top: 15px;
+}
+
+.logo h2 {
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: .8s;
+    font-family: 'Kalam', cursive;
+    font-size: 30px;
+    display:  inline-block;
+}
+
+.logo h2:hover{
+	color: #abdae0;
+	text-decoration: none;
+}
+
+/*
+==========================================
+    header-img Css
+==========================================
+*/
+
+.header-img{
+	background-image: url('../img/pexels-photo-355465.jpeg');
+	height: 100%;
+	position: relative;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	z-index: 0;
+}
+
+.header-img:after{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: #252525;
+	opacity: .42;
+	z-index: -1;
+}
+
+/*
+==========================================
+    header-img Css
+==========================================
+*/
+
+.d-table{
+	display: table;
+	height: 100%;
+	text-align: center;
+	width: 100%;
+}
+
+.d-table-cell{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+}
+
+
+.header-img .container ,
+.header-img .row ,
+.header-img .col-md-12 {
+	height: 100%;
+}
+
+/*
+==========================================
+    header-img text Css
+==========================================
+*/
+
+.header-content {
+    color:  #fff;
+    margin-top: 75px;
+}
+
+.header-content h1 {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.header-content h1 span{
+    font-size: 60px;
+    font-weight: 700;
+    color: #00b6ff;
+}
+
+.header-content p{
+	max-width: 850px;
+	margin: 40px auto 5px auto;
+	font-size: 18px;
+	font-weight: 400px;
+	line-height: 24px;
+}
+
+.header-content a{
+  text-decoration: none;
+  color: #fff;
+  background: deepskyblue;
+  padding: 10px 32px 9px 32px;
+  margin-top: 30px;
+  border-radius: 5px;
+  font-size: 20px;
+  display: inline-block;
+  border: 1px solid deepskyblue;
+  transition: .8s;
+}
+
+.header-content a:hover {
+  color: deepskyblue;
+  background: none;
+  text-decoration: none;
+  border: 1px solid deepskyblue;
+}
+
+/*
+==========================================
+    About-us Css
+==========================================
+*/
+
+.sa-about{
+  background-color: #f6f6f6;
+}
+
+.about-left img {
+    width:  100%;
+    height:  auto;
+}
+
+.about-left {
+    position:  relative;
+    text-align:  center;
+    color:  #fff;
+}
+
+.about-left .about-left-details {
+    position:  absolute;
+    bottom:  0;
+    width: 100%;
+    z-index: 1;
+}
+
+.about-left .about-left-details:after {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #252525;
+    opacity: .70;
+    z-index: -1;
+}
+
+.about-left-details {
+    text-transform:  uppercase;
+    font-weight:  600;
+}
+
+.about-left-details ul li {
+    display:  inline;
+}
+
+.about-left-details ul li a {
+    display:  inline-block;
+    font-size:  18px;
+    color:  #fff;
+    background: #252525;
+    padding:  5px;
+    transition:  .8s;
+    height: 35px;
+    width: 35px;
+    border-radius:  50px;
+}
+
+.about-left-details {
+    padding:  15px 0;
+}
+
+.about-left-details ul li a {
+    margin: 4px;
+}
+
+.about-left-details ul li a:hover {
+    background: #fff;
+    color: #252525;
+}
+
+
+.about-right h3{
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.about-right p{
+  font-size: 17px;
+  line-height: 30px;
+  color: #656565;
+  margin-top: 27px;
+}
+
+.about-right p strong{
+  color: #414141;
+}
+
+.about-right a{
+  color: #fff;
+  background: deepskyblue;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  padding:9px 20px;
+  border: 1px solid deepskyblue;
+  border-radius: 5px;
+  transition: .8s;
+  margin-top: 48px;
+}
+
+.about-right a:hover{
+  color: deepskyblue;
+  background: #fff;
+  border: 1px solid deepskyblue;
+}
+
+/*
+==========================================
+    Video Css
+==========================================
+*/
+
+
+.video-area{
+  background-image: url('../img/pexels-photo-533930.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  color: #fff;
+}
+
+.video-area span{
+  color: deepskyblue;
+}
+
+.video-area:after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .6;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.video-area h2{
+  font-size: 36px;
+  font-weight: 700px;
+}
+
+.video-icon a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 32px;
+  border: 2px solid #fff;
+  outline: none;
+  display: inline-block;
+  border-radius: 10px;
+  width: 75px;
+  height: 72px;
+  line-height: 72px;
+  margin-top: 34px;
+  transition: .8s;
+}
+
+.video-icon a:hover{
+  background: #fff;
+  color: #000;
+}
+
+/*
+==========================================
+    Myskill Css
+==========================================
+*/
+
+.service-box i {
+    color: deepskyblue;
+    font-size: 48px;
+}
+
+.service-box {
+    margin-bottom: 15px;
+}
+
+.service-box h3 {
+    margin: 15px 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.service-box p {
+    line-height: 26px;
+}
+
+.skill-left h3 {
+    margin-bottom: 15px;
+}
+
+.skill-left p:last-child {
+    margin-top: 25px;
+}
+
+
+/* Skill test */
+
+.skillbar {
+  position: relative;
+  display: inline-block;
+  margin: 15px 0;
+  width: 100%;
+  background: #eee;
+  height: 35px;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.skillbar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #ffffff;
+  background: #6adcfa;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.skillbar-bar {
+  height: 35px;
+  width: 0px;
+  background: #6adcfa;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 11px;
+  height: 35px;
+  line-height: 35px;
+  color: #ffffff;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* skill  Text */
+
+.skill-right h3 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.skill-right p {
+    font-weight:  300;
+    line-height: 27px;
+    color: #2c2b2b;
+    margin-top: 18px;
+}
+
+.sa-skill-bar p{
+  margin-top: 0;
+}
+
+
+.sa-skill-bar .skillbar {
+    background: #000;
+    height: 0;
+    overflow: hidden;
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+.sa-skill-bar p.skillbar-bar {
+    background: deepskyblue !important;
+    height: 10px;
+    top: 5.1px;
+    border-radius: 42px;
+    position: absolute;
+    left: 3px;
+}
+
+.sa-skill-bar span.skill-bar-percent {
+    position: absolute;
+    top: -6px;
+    color: #FFF;
+}
+
+h4.skill-bar-title {
+    color: #2c2b2b;
+    font-weight: 400;
+    font-size: 19px;
+    margin-top: 10px;
+    margin-bottom: -4px;
+}
+
+
+.sa-skill-bar .skillbar {
+    margin-bottom: 0 !important;
+}
+
+.skill-right {
+    margin-top: 28px;
+}
+
+.skill {
+    background: #f3f3f3;
+}
+
+
+/*
+==========================================
+    Counter Css
+==========================================
+*/
+
+.counter{
+  background-image: url('../img/pexels-photo (2).jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.counter::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  top: 0;
+  left: 0;
+  opacity: .8;
+  z-index: -1;
+}
+
+.counter-box i{
+  font-size: 22px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+
+.counter-number{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.counter-name{
+  font-size: 26px;
+  font-weight: 600;
+}
+
+/* Protfolio Menu */
+
+.protfolio-menu {
+    text-align:  center;
+}
+
+.protfolio-menu button {
+    background:  transparent;
+    border:  none;
+    font-size: 15px;
+    font-weight:  600;
+    text-transform:  uppercase;
+    transition:  .8s;
+    outline: none;
+}
+
+.protfolio-menu button:hover {
+    color:  deepskyblue;
+}
+
+.protfolio-item {
+    margin-top: 38px;
+    position: relative;
+}
+
+button.mixitup-control-active {
+    color: deepskyblue;
+}
+
+/* Protfolio Hover */
+
+.protfolio-item img {
+    max-width: 100%;
+}
+
+.protfolio-item:hover .protfolio-item-hover{
+  visibility: visible;
+  opacity: 1;
+}
+
+.protfolio-item-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #80808080;
+    display: flex;
+    align-items: center;
+    transition: .8s;
+    justify-content: center;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.protfolio-item-hover a {
+    font-size: 26px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.relative{
+  text-align: center;
+}
+
+.protfolio-more{
+  text-decoration: none;
+  color: #fff;
+  background: deepskyblue;
+  padding: 13px 20px 8px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  display: inline-block;
+  border: 1px solid deepskyblue;
+  transition: .8s;
+  text-transform: uppercase;
+}
+
+.protfolio-more:hover {
+  color: deepskyblue;
+  background: none;
+  text-decoration: none;
+  border: 1px solid deepskyblue;
+}
+
+.section-padding-protfolio {
+  padding: 45px 0px 0px 0px;
+}
+
+
+/*
+==========================================
+    Team Css
+==========================================
+*/
+
+.team{
+  background: #e1e1e1;
+}
+
+
+.team-item {
+  position:  relative;
+}
+
+.team-item-hover {
+  position:  absolute;
+  top: 0;
+  left:  0;
+  color:  white;
+  width: 100%;
+  z-index: 0;
+  height: 100%;
+}
+
+.team-item-hover:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: lightskyblue;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  transition: .68s;
+}
+
+.team-item:hover .team-item-hover:after{
+  visibility: visible;
+  opacity: .4;
+}
+
+.team-hover-content {
+    background: #0087ff;
+    position:  absolute;
+    width:  100%;
+    bottom:  -83px;
+    text-align:  center;
+    padding: 10px 0;
+    height:  auto;
+    transition: .8s;
+}
+
+.team-item:hover .team-hover-content{
+  bottom: 0;
+}
+
+.team-hover-content ul li a{
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  margin: 3px;
+  background: #004dffeb;
+  outline: none;
+  padding: 5px;
+  width: 35px;
+  transition: .8s;
+  height: 35px;
+  border-radius: 50px
+}
+
+.team-hover-content ul li a:hover{
+  background: #fff;
+  color: #0087ff;
+}
+
+.team-hover-content ul li {
+    display:  inline;
+}
+
+.team-hover-content ul {
+    margin-top: 4px;
+}
+
+
+/* Team : Pre Next */
+
+.owl-nav {
+    display:  inline-flex;
+    text-align:  center;
+}
+
+.owl-prev {
+    top: 34px;
+    left: 223px;
+    bottom: 0;
+    position: relative;
+    background: deepskyblue;
+    display:  inline-block;
+    padding: 5px 31px;
+    color: #fff;
+    border: 1px solid deepskyblue;
+    border-radius: 5px;
+    outline: none;
+    transition: .8s;
+}
+
+.owl-prev:hover{
+  background: #e1e1e1;
+  color: deepskyblue;
+  border: 1px solid deepskyblue;
+}
+
+.owl-next{
+  top: 34px;
+  left: 700px;
+  bottom: 0;
+  position: relative;
+  background: deepskyblue;
+  display:  inline-block;
+  padding: 5px 30px;
+  color: #fff;
+  border: 1px solid deepskyblue;
+  border-radius: 5px;
+  outline: none;
+  transition: .8s;
+}
+
+.owl-next:hover{
+  background: #e1e1e1;
+  color: deepskyblue;
+  border: 1px solid deepskyblue;
+}
+
+/*
+==========================================
+    TESTIMONIAL CSS
+==========================================
+*/
+
+.testimonial{
+  background: url('../img/beach-coast-dad-38302.jpg');
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  color: #fff;
+
+}
+
+.testimonial::after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000000;
+  opacity: .6;
+  z-index: -1;
+}
+
+.testimonial p{
+  font-weight: 300;
+}
+
+.owl-carousel-testimonial img{
+  width: auto !important;
+  margin: 0 auto;
+  padding: 7px 5px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.testimonial-name{
+  font-size: 29px;
+  margin: 19px 0;
+}
+
+.item p{
+  line-height: 30px;
+  font-size: 18px;
+}
+
+
+/*
+==========================================
+    BLOG CSS
+==========================================
+*/
+
+.blog-item{
+  box-shadow: 0 0 17px #e3e3e3;
+  transition: .8s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.blog-item:hover{
+  box-shadow: 0 0 15px #000000;
+  transition: 1s;
+}
+
+.blog-item img{
+  max-width: 100%;
+  border-bottom: 8px solid deepskyblue;
+}
+
+.blog-details{
+  padding: 19px 20px;
+}
+
+.blog-title{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.date{
+  font-size: 13px;
+  margin: 15px 0px 12px 0px;
+}
+
+.blog-details p{
+  line-height: 26px;
+  color: #433f3f;
+}
+
+.blog-button{
+  text-decoration: none;
+  background: deepskyblue;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 7px 13px;
+  border-radius: 4px;
+  display: inline-block;
+  transition: .8s;
+  margin-top: 14px;
+  border: 1px solid deepskyblue;
+}
+
+.blog-button:hover{
+  background: transparent;
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+
+/*
+==========================================
+    CONTACT-US CSS
+==========================================
+*/
+
+.contact{
+  background: url('../img/bottles-brickwall-contemporary-908293 (2).jpg') no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  color: #ffffff;
+}
+
+.contact::after{
+  position: absolute;
+  content: '';
+  background: #000000;
+  opacity: .7;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.contact input{
+  background: transparent;
+  height: 43px;
+  margin-bottom: 30px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  transition: 1s;
+}
+
+.contact input:focus{
+  opacity: .66;
+  color: #000;
+  border: 1px solid #ffffff;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder{
+  color: #ffffff;
+}
+
+.contact textarea{
+  background: transparent;
+  height: 180px;
+  margin-bottom: 30px;
+  border: 1px solid #ffffff;
+  padding-top: 20px;
+  color: #ffffff;
+  transition: 1s;
+}
+
+.contact textarea:focus{
+  opacity: .7;
+  border: 1px solid #ffffff;
+}
+
+.contact button{
+  background: deepskyblue;
+  color: #ffffff;
+  font-size: 20px;
+  border: 0;
+  padding: 10px 32px;
+  border-radius: 5px;
+  border: 1px solid deepskyblue;
+  transition: 1s;
+  outline: none;
+}
+
+.contact button:hover{
+  background: transparent;
+  color: deepskyblue;
+  border: 1px solid deepskyblue;
+}
+
+/*
+==========================================
+    FOOTER CSS
+==========================================
+*/
+
+.footer{
+  background: #121111;
+  color: #ffffff;
+  padding: 25px 0;
+}
+
+.footer a{
+  color: #ffffff;
+  font-size: 20px;
+  transition: .8s;
+}
+.footer a:hover{
+  color: #aba9a9;
+}
+
+.footer-icon ul li{
+  display: inline;
+  margin-right: 20px;
+}
+
+.footer-icon ul li:last-child{
+  margin-right: 0;
+}
+
+
+
+/*
+==========================================
+    NAVBAR_BOOTSTRAP CSS
+==========================================
+*/
+
+.navbar-brand{
+    margin-top: 4px;
+}
+
+.navbar-brand strong{
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: .8s;
+    font-family: 'Kalam', cursive;
+    font-size: 30px;
+    display:  inline-block;
+}
+
+.navbar-brand strong:hover{
+    color: #abdae0;
+    text-decoration: none;
+}
+
+nav.navbar.navbar-expand-lg.main-menu {
+    padding: 0;
+}
+
+nav.main-menu ul {
+    margin-left: auto;
+}
+
+button.navbar-toggler.collapsed {
+    outline: none;
+}
+
+button.navbar-toggler.collapsed i{
+  color: deepskyblue;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+    outline: none;
+    color: #fff;
+}
